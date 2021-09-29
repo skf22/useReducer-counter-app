@@ -1,38 +1,61 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   text-align: center;
+  background: lightblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 1em auto;
+  font-size: 2.75rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.counter-container {
+  font-size: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: rgb(0, 55, 128);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1em 0;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.counter-container button {
+  height: 2.5em;
+  width: 2.5em;
+  font-size: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter-container button:hover {
+  color: #fff;
+  background: rgb(9, 91, 168);
+}
+
+.counter-container h3 {
+  margin: 0 1.25em;
+  font-size: 4rem;
+  width: 1.5em;
+}
+
+.positive {
+  color: lightgreen;
+}
+
+.negative {
+  color: red;
+}
+
+.neutral {
+  color: #fff;
 }
